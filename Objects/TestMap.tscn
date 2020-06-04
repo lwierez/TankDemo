@@ -47,8 +47,6 @@ shape = SubResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.339315, 0 )
-RotationSpeed = 0.5
-Speed = 10.0
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.3577, 0.933837, 0, -0.933837, 0.3577, 0, 16.5089, 10.4623 )

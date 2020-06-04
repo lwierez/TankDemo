@@ -1,8 +1,8 @@
 extends Spatial
 
 # Statistics
-export(float) var RotationSpeed = 5;
-export(float) var Speed = 5;
+export(float) var RotationSpeed = .75;
+export(float) var Speed = 7.5;
 
 # Components
 var Base
