@@ -7,7 +7,7 @@ var noise_texture_file
 var noise_texture_data
 
 func _ready():
-	noise_texture_file = load("res://Images/noise_texture.tres")
+	noise_texture_file = load("res://Materials/Textures/noise_texture.tres")
 	yield(noise_texture_file, "changed")
 	noise_texture_data = noise_texture_file.get_data()
 	noise_texture_data.lock()
@@ -49,5 +49,5 @@ func _ready():
 
 	var mesh = st.commit()
 	$StaticBody/MeshInstance.mesh = mesh
-	$StaticBody/MeshInstance.material_override = load("res://Materials/Map_material.tres")
+	$StaticBody/MeshInstance.material_override = load("res://Materials/Materials/terrain.tres")
 	$StaticBody/CollisionShape.shape = mesh.create_trimesh_shape()

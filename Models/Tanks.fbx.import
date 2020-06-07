@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Tanks.fbx-2ebb3dcc243c26fb75b3e644a6d39002.scn"
+path="res://.import/Tanks.fbx-c8be31c3ce7250521371adee73f1df26.scn"
 
 [deps]
 
-source_file="res://Models/Tanks/Tanks.fbx"
-dest_files=[ "res://.import/Tanks.fbx-2ebb3dcc243c26fb75b3e644a6d39002.scn" ]
+source_file="res://Models/Tanks.fbx"
+dest_files=[ "res://.import/Tanks.fbx-c8be31c3ce7250521371adee73f1df26.scn" ]
 
 [params]
 

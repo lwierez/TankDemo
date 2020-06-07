@@ -1,7 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Models/Tanks/Material.material" type="Material" id=2]
+[ext_resource path="res://Materials/Materials/tank.material" type="Material" id=2]
+
+
 
 [sub_resource type="BoxShape" id=6]
 extents = Vector3( 1.49912, 0.963716, 2.96763 )
