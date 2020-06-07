@@ -6,9 +6,16 @@ var height = 300
 var noise_texture_file
 var noise_texture_data
 
+var rocks = []
+
 func _ready():
 	noise_texture_file = load("res://Materials/Textures/noise_texture.tres")
 	yield(noise_texture_file, "changed")
+	
+	rocks.append(preload("res://Scenes/Objects/Rock_1.tscn"))
+	rocks.append(preload("res://Scenes/Objects/Rock_2.tscn"))
+	rocks.append(preload("res://Scenes/Objects/Rock_3.tscn"))
+	
 	noise_texture_data = noise_texture_file.get_data()
 	noise_texture_data.lock()
 	
@@ -46,6 +53,11 @@ func _ready():
 			st.add_normal(Vector3(0, 1, 0))
 			st.add_uv(Vector2(x, z+1))
 			st.add_vertex(Vector3(x, noise_texture_data.get_pixel(x, z+1).r * 10, z+1))
+			
+			if randf() < .002:
+				var new_rock = rocks[randi()%rocks.size()].instance()
+				add_child(new_rock)
+				new_rock.set_translation(Vector3(x, noise_texture_data.get_pixel(x, z).r * 10, z))
 
 	var mesh = st.commit()
 	$StaticBody/MeshInstance.mesh = mesh
