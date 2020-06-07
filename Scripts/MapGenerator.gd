@@ -48,6 +48,6 @@ func _ready():
 			st.add_vertex(Vector3(x, noise_texture_data.get_pixel(x, z+1).r * 10, z+1))
 
 	var mesh = st.commit()
-	$MeshInstance.mesh = mesh
-	$MeshInstance.material_override = load("res://Materials/Map_material.tres")
-	$MeshInstance/StaticBody/CollisionShape.shape = mesh.create_trimesh_shape()
+	$StaticBody/MeshInstance.mesh = mesh
+	$StaticBody/MeshInstance.material_override = load("res://Materials/Map_material.tres")
+	$StaticBody/CollisionShape.shape = mesh.create_trimesh_shape()

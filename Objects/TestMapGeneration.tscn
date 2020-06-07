@@ -8,11 +8,11 @@
 [node name="Map" type="Spatial" parent="."]
 script = ExtResource( 1 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Map"]
+[node name="StaticBody" type="StaticBody" parent="Map"]
 
-[node name="StaticBody" type="StaticBody" parent="Map/MeshInstance"]
+[node name="CollisionShape" type="CollisionShape" parent="Map/StaticBody"]
 
-[node name="CollisionShape" type="CollisionShape" parent="Map/MeshInstance/StaticBody"]
+[node name="MeshInstance" type="MeshInstance" parent="Map/StaticBody"]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( -0.724244, 0, -0.689544, 0, 1, 0, 0.689544, 0, -0.724244, 8.81297, 5.63089, 8.08393 )
