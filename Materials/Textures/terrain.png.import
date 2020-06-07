@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/rocks.png-fa7ad62cc5ba0b960bd8bce84b93099f.s3tc.stex"
-path.etc2="res://.import/rocks.png-fa7ad62cc5ba0b960bd8bce84b93099f.etc2.stex"
+path.s3tc="res://.import/terrain.png-7b5b69b5aca64790c20f8760399e6591.s3tc.stex"
+path.etc2="res://.import/terrain.png-7b5b69b5aca64790c20f8760399e6591.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Materials/Textures/rocks.png"
-dest_files=[ "res://.import/rocks.png-fa7ad62cc5ba0b960bd8bce84b93099f.s3tc.stex", "res://.import/rocks.png-fa7ad62cc5ba0b960bd8bce84b93099f.etc2.stex" ]
+source_file="res://Materials/Textures/terrain.png"
+dest_files=[ "res://.import/terrain.png-7b5b69b5aca64790c20f8760399e6591.s3tc.stex", "res://.import/terrain.png-7b5b69b5aca64790c20f8760399e6591.etc2.stex" ]
 
 [params]
 
