@@ -4,6 +4,6 @@
 seed = 93456893
 
 [resource]
-width = 300
-height = 300
+width = 1500
+height = 1500
 noise = SubResource( 1 )

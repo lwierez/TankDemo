@@ -1,7 +1,7 @@
 extends Spatial
 
-var width = 300
-var height = 300
+var width = 900
+var height = 900
 
 var noise_texture_file
 var noise_texture_data
